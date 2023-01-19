@@ -1,0 +1,18 @@
+body {
+    background-color: #03120E;
+}
+
+.jBronny {
+    font-size: 100px;
+    color: #F75C03;
+}
+
+.divjBronny {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar {
+    color: #03120E;
+}
