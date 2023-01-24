@@ -13,7 +13,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Ubuntu&display=swap" rel="stylesheet">
 </head>
 
-<body>
+<body onload="startTime()">
     <nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
         <a class="navbar-brand" href="#">@bronnyhub</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -37,6 +37,9 @@
             <li class="nav-item">
                 <a class="nav-link" href="#">Contact</a>
               </li>
+            <li class="nav-item">
+              <div id="txt" class="clock"></div>
+            </li>
           </ul>
         </div>
       </nav>
@@ -48,6 +51,27 @@
       <div class="divsubtitle">
         <p class="subtitle">The power of Web Development.</p>
       </div>
+
+<div id="txt" class="clock"></div>
+
+<script>
+function startTime() {
+  const today = new Date();
+  let h = today.getHours();
+  let m = today.getMinutes();
+  let s = today.getSeconds();
+  m = checkTime(m);
+  s = checkTime(s);
+  document.getElementById('txt').innerHTML =  h + ":" + m + ":" + s;
+  setTimeout(startTime, 1000);
+}
+
+function checkTime(i) {
+  if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+  return i;
+}
+</script>
+
 </body>
 
 </html>
