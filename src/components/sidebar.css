@@ -14,7 +14,6 @@ body {
 .sideb {
     color:lightgoldenrodyellow;
     font-size: 30px;
-    margin:20px;
 }
 
 .menu {
@@ -24,15 +23,22 @@ body {
     margin-top: 40px;
 }
 
-li {
+.menu li {
     margin:20px;
     color:lightgoldenrodyellow;
 }
 
-.ikonki {
-    display:inline;
+.ikonki ul {
+    justify-items: center;
+    align-items: center;
+}
+
+.ikonki li{
+    display:inline-flex;
     list-style: none;
     width: auto;
+    margin-right:1rem;
+    margin-top:22rem;
 }
 .ikona {
     height:30px;
