@@ -3,7 +3,7 @@ body {
 }
 
 .container-sideb {
-    background-color: #073309;
+    background-color: #1c4b6d;
     float:left;
     height:100vh;
     width: 15%;
@@ -11,9 +11,13 @@ body {
     position:relative;
 }
 
-.sideb {
-    color:lightgoldenrodyellow;
-    font-size: 30px;
+.logo {
+    width:60%;
+}
+
+.bronnyhub {
+    width:100%;
+    margin-top: -1rem;
 }
 
 .menu {
@@ -26,6 +30,12 @@ body {
 .menu li {
     margin:20px;
     color:lightgoldenrodyellow;
+    font-size: 20px;
+}
+
+.menu li:hover {
+    text-decoration: underline;
+    cursor: pointer;
 }
 
 .ikonki ul {
@@ -38,7 +48,7 @@ body {
     list-style: none;
     width: auto;
     margin-right:1rem;
-    margin-top:22rem;
+    margin-top:15rem;
 }
 .ikona {
     height:30px;

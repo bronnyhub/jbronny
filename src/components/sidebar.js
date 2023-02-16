@@ -4,12 +4,14 @@ import './sidebar.css'
 const Sidebar = () => {
   return (
     <div className='container-sideb'>
-       <p className='sideb'>jbronny</p> 
+
+      <img src='profile pic.png' alt='logo' className='logo'></img>
+      <img src='bronnyhub.png' alt='@bronnyhub' className='bronnyhub'></img>
         
             <ul className='menu'>
                 <li>About me</li>
                 <li>Projects</li>
-                <li>Contacts</li>
+                <li>Contact</li>
             </ul>
 
       <div>
