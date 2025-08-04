@@ -9,7 +9,8 @@ const Sidebar = () => {
       <img src='/img/bronnyhub.png' alt='@bronnyhub' className='bronnyhub' />
 
       <ul className='menu'>
-        <li><Button label="About me" /></li>
+        <li><Button label="Main" /></li>
+        <li><Button label="AboutMe" /></li>
         <li><Button label="Projects" /></li>
         <li><Button label="Contact" /></li>
       </ul>

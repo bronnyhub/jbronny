@@ -1,12 +1,16 @@
 import React from 'react';
 import './button.css';
 
-const handleClick = (e) => e.target.textContent = 'Clicked!';
+const handleClick = (label) => {
+  const path = `/${label.toLowerCase()}`;
+  window.history.pushState({}, '', path);
+  window.dispatchEvent(new PopStateEvent('popstate'));
+};
 
 const Button = ({ label }) => (
-    <button className='button' onClick={handleClick}>
-        {label}
-    </button>
+  <button className='button' onClick={() => handleClick(label)}>
+    {label}
+  </button>
 );
 
 export default Button;

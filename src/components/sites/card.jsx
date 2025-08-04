@@ -3,7 +3,7 @@ function Card(){
         <div className='card'>
             <img
                 alt='Logo'
-                src='./img/profilepic.png'
+                src='/img/profilepic.png'
                 className= 'card-image'/>
             <h2 className='card-title'>@bronnyhub</h2>
             <p className='card-text'>My name is Julia and I am an aerospace engineering with web development hobby.</p>

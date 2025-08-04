@@ -1,0 +1,6 @@
+.main-text {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
