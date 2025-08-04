@@ -4,7 +4,7 @@ import Card from './card.jsx'
  
 export default function AboutMe() {
     return (
-        <div>
+        <div className='about-me'>
             <Card />
         </div>
     )

@@ -1,0 +1,36 @@
+.loading-bar-container {
+  position: fixed; 
+  height: 5%;
+  width: 50%;
+  background-color: #f0f0f0;
+  overflow: hidden;
+}
+
+.loading-bar-fill {
+  height: 100%;
+  width: 60%;
+  background-color: #1c4b6d;
+  animation: slide 1.2s infinite ease-in-out;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(-100%);
+  }
+  50% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(200%);
+  }
+}
+
+.loading-bar-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #1c4b6d;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.2em;
+}
