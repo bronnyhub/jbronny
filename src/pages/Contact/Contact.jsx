@@ -1,6 +1,5 @@
 import React from 'react'
-import './main.css'
-import Card from './card.jsx'
+import Card from '../../components/card.jsx'
 import './Contact.css'
  
 export default function AboutMe() {

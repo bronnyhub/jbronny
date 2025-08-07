@@ -1,6 +1,6 @@
 import React from 'react'
 import './main.css'
-import LoadingBar from '../loading.jsx'
+import LoadingBar from '../../components/loading.jsx'
  
 
 function Main() {
