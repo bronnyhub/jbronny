@@ -5,7 +5,11 @@ import Card from '../../components/card.jsx'
 export default function AboutMe() {
     return (
         <div className='about-me'>
-            <Card />
+            <Card 
+                imgSrc='/img/profilepic.png'
+                title='@bronnyhub'
+                text='My name is Julia and I am an aerospace engineering with web development hobby.'
+            />
             <div className='skills'>
                 <p className='skills-title'>My skills</p>
                 <ul className='skills-list'>

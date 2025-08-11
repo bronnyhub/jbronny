@@ -1,14 +1,17 @@
 import './card.css';
 
-function Card(){
+function Card({ imgSrc, title, text, link }) {
+    const handleClick = ()=> {
+        window.open(link, '_blank');
+    };
     return(
-        <div className='card'>
+        <div className='card' onClick={handleClick}>
             <img
-                alt='Logo'
-                src='/img/profilepic.png'
+                alt={title}
+                src={imgSrc}
                 className= 'card-image'/>
-            <h2 className='card-title'>@bronnyhub</h2>
-            <p className='card-text'>My name is Julia and I am an aerospace engineering with web development hobby.</p>
+            <h2 className='card-title'>{title}</h2>
+            <p className='card-text'>{text}</p>
         </div>
     );
 }
